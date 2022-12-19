@@ -286,4 +286,14 @@
 
     </section>
 </body>
+    <script>
+        fetch("https://api.coingecko.com/api/v3/coins")
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+        })
+        .catch((e) => {
+            console.log(e);
+        })
+    </script>
 </html>
